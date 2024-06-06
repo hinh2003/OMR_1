@@ -1,0 +1,2 @@
+ninja: Entering directory `E:\Projects Android\nckh8\sdk\.cxx\Debug\33i705w3\arm64-v8a'
+ninja: no work to do.
