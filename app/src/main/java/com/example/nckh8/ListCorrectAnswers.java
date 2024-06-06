@@ -107,7 +107,7 @@ public class ListCorrectAnswers extends AppCompatActivity {
                     if (check) {
                         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                         intent.setType("image/*");
-                        startActivityForResult(intent,1001--);
+                        startActivityForResult(intent,1001);
                     }
                 }
             });
