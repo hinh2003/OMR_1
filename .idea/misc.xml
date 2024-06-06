@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/OMR_DEMO-main/OMR_DEMO-main/app/src/main/res/drawable/baseline_flash_off_24.xml" value="0.137" />
+        <entry key="..\:/OMR_DEMO-main/OMR_DEMO-main/app/src/main/res/drawable/baseline_flash_on_24.xml" value="0.137" />
+        <entry key="..\:/OMR_DEMO-main/OMR_DEMO-main/app/src/main/res/drawable/button_background.xml" value="0.137" />
         <entry key="..\:/OMR_DEMO-main/OMR_DEMO-main/app/src/main/res/drawable/ic_launcher_background.xml" value="0.137" />
         <entry key="..\:/OMR_DEMO-main/OMR_DEMO-main/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.137" />
         <entry key="..\:/OMR_DEMO-main/OMR_DEMO-main/app/src/main/res/drawable/radio_color.xml" value="0.137" />
+        <entry key="..\:/OMR_DEMO-main/OMR_DEMO-main/app/src/main/res/drawable/radio_selector.xml" value="0.137" />
+        <entry key="..\:/OMR_DEMO-main/OMR_DEMO-main/app/src/main/res/drawable/rectangle_shape.xml" value="0.137" />
         <entry key="..\:/OMR_DEMO-main/OMR_DEMO-main/app/src/main/res/drawable/round_camera_24.xml" value="0.137" />
         <entry key="..\:/OMR_DEMO-main/OMR_DEMO-main/app/src/main/res/drawable/round_flip_camera_android_24.xml" value="0.137" />
         <entry key="..\:/OMR_DEMO-main/OMR_DEMO-main/app/src/main/res/layout/activity_list_correct_answers.xml" value="0.33" />

@@ -1,5 +1,7 @@
 package com.example.nckh8;
 
+import static com.example.nckh8.ListExamCode.examCodeArrayList;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,20 +18,27 @@ public class AdapterCorrectAnswer extends BaseAdapter {
     String[] listNumericalOrder;
     LayoutInflater inflater;
 
+
     TextView numericalOrder;
     RadioButton A, B, C, D;
 
     public static ArrayList<String> correctAnswers;
+    String code;
+    int index;
 
-    public AdapterCorrectAnswer(Context context, String[] listNumericalOrder) {
+    public AdapterCorrectAnswer(Context context, String[] listNumericalOrder, String code,ArrayList<String> correctAnswers, int index) {
         this.context = context;
         this.listNumericalOrder = listNumericalOrder;
+        AdapterCorrectAnswer.correctAnswers = correctAnswers;
+        this.code = code;
+        this.index = index;
 
-        // khởi tạo danh sách mảng và thêm chuỗi tĩnh cho tất cả các câu hỏi
-        correctAnswers = new ArrayList<>();
-        for (int i = 0; i < listNumericalOrder.length; i++) {
-            correctAnswers.add("Chưa chọn");
+        if (correctAnswers.isEmpty()) {
+            for (int i = 0; i < listNumericalOrder.length; i++) {
+                correctAnswers.add("Null ");
+            }
         }
+
         inflater = LayoutInflater.from(context);
     }
 
@@ -121,6 +130,8 @@ public class AdapterCorrectAnswer extends BaseAdapter {
 
         // Đặt giá trị trong TextView
         numericalOrder.setText(listNumericalOrder[position]);
+        ExamCode examCode = new ExamCode(code, correctAnswers);
+        examCodeArrayList.set(index, examCode);
 
         return convertView;
     }

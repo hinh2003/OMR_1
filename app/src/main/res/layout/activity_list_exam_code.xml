@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ListExamCode">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_back_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#3F51B5"
+        app:title="Mã đề"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_exam_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tb_back_main"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/edt_add_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="Nhập mã đề"/>
+
+        <Button
+            android:id="@+id/btn_add_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thêm"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_exam_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_remind"
+        android:layout_below="@+id/ll_exam_code" />
+
+    <TextView
+        android:id="@+id/tv_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="20dp"
+        android:padding="10dp"
+        android:text="(Giữ mã đề trong 3s để xóa)"
+        android:textAlignment="center"
+        android:textColor="#9F000000"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

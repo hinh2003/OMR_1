@@ -1,14 +1,13 @@
 package com.example.nckh8;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 if (number.isEmpty()) {
                     Toast.makeText(MainActivity.this, "Vui lòng nhập số câu", Toast.LENGTH_SHORT).show();
                 } else {
-                    Intent intent = new Intent(MainActivity.this, ListCorrectAnswers.class);
+                    Intent intent = new Intent(MainActivity.this, ListExamCode.class);
                     intent.putExtra("number", number);
 
                     startActivity(intent);
